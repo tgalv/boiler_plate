@@ -4,6 +4,8 @@
 
 * Added setup.py
 
+* Added versioning capabilities
+
 * Changed name application -> boiler_plate
 
 * root URL arbtirarily return package name and version
