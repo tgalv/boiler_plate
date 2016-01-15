@@ -9,4 +9,6 @@ setup(
     author_email="fred.bloggs@landregistry.gsi.gov.uk",
     packages=find_packages(),
     install_requires=["flask"],
+    tests_require=["flask"],
+    test_suite="boiler_plate.test_suite.suite",
 )

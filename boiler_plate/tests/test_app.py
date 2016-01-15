@@ -1,6 +1,6 @@
 import unittest
 
-from application import app
+from boiler_plate import app
 
 class TestHelloWorld(unittest.TestCase):
 
@@ -9,5 +9,4 @@ class TestHelloWorld(unittest.TestCase):
 
     def test_service(self):
         response = self.app.get('/helloworld/')
-        self.assertEquals("Hello World!", response.data)
         self.assertEquals(200, response.status_code)
