@@ -1,0 +1,11 @@
+0.1
+
+* Created helloworld blueprint
+
+* Added setup.py
+
+* Changed name application -> boiler_plate
+
+* root URL arbtirarily return package name and version
+
+* Add native test runner
