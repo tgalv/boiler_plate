@@ -69,7 +69,15 @@ Quickstart
     $ git clone git@git.lr.net:LRTM569/boilerplate.git
     $ cd boilerplate
     $ find . -type f -print0 | xargs -0 sed -i 's/boiler_plate/my_project/g'
+    $ mv boiler_plate my_project
     $ python setup.py test
     $ sphinx-apidoc -F -o docs my_project
     $ python setup.py build_sphinx
     $ python setup.py develop --user
+    $ cd ~
+    $ python 
+
+    >>> import my_project
+    >>> my_project.__version__
+
+
