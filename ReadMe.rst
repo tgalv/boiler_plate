@@ -64,20 +64,31 @@ Build the html from the rst.
 Quickstart
 ==========
 
-::
+1. Clone::
 
     $ git clone git@git.lr.net:LRTM569/boilerplate.git
+
+2. Rename::
+
     $ cd boilerplate
     $ find . -type f -print0 | xargs -0 sed -i 's/boiler_plate/my_project/g'
     $ mv boiler_plate my_project
+
+3. Run the unittests::
+
     $ python setup.py test
+
+4. Build the docs::
+
     $ sphinx-apidoc -F -o docs my_project
     $ python setup.py build_sphinx
+    $ firefox build/sphinx/html/index.html 
+
+5. Start Developer Mode::
+
     $ python setup.py develop --user
     $ cd ~
     $ python 
 
     >>> import my_project
     >>> my_project.__version__
-
-
