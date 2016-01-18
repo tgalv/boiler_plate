@@ -16,7 +16,9 @@ Credits
 Pre-Reqs
 ========
 
-`setuptools <https://pythonhosted.org/setuptools/setuptools.html>`_.
+* `setuptools <https://pythonhosted.org/setuptools/setuptools.html>`_.
+
+* `sphinx <http://www.sphinx-doc.org/en/stable/>`_.
 
 Tests
 =====
@@ -26,5 +28,8 @@ Blah blah
 Documentation 
 =============
 
-Blah blah
+::
+ 
+    $ python setup.py build_sphinx
+
 
