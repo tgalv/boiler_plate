@@ -1,3 +1,7 @@
+"""
+Create a Test Suite by glob pattern maching.
+"""
+
 import os
 import glob
 import unittest
