@@ -29,6 +29,10 @@ Documentation
 =============
 
 ::
+
+    $ $ sphinx-apidoc -F -o docs boiler_plate
+
+::
  
     $ python setup.py build_sphinx
 

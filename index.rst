@@ -3,20 +3,26 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Boiler Plate's documentation!
-========================================
+==========================================
+ Welcome to Boiler Plate's documentation!
+==========================================
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
 
    .. include:: ../../ReadMe
 
+   
+     
 
-Indices and tables
-==================
+
+====================
+ Indices and tables
+====================
 
 * :ref:`genindex`
 * :ref:`modindex`
