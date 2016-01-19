@@ -54,6 +54,15 @@ new Land Registry Flask application.
     >>> import my_project
     >>> my_project.__version__
 
+    $ cd -
+
+7. Check the application::
+
+    $ ./run.sh &
+    $ curl http://127.0.0.1:5000/
+    $ curl http://127.0.0.1:5000/helloworld/
+    $ fg
+
 
 Credits
 =======
