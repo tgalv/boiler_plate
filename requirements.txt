@@ -13,3 +13,4 @@ py==1.4.25
 pytest==2.6.3
 pytest-cov==1.8.0
 responses==0.3.0
+sphinx
