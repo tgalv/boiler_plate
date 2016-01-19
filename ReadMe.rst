@@ -23,6 +23,7 @@ new Land Registry Flask application.
     $ mv boiler_plate my_project
 
 3. Create new repo::
+
    $  rm -rf .git
    $  git init
 
