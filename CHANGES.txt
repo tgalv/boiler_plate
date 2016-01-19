@@ -11,3 +11,5 @@
 * root URL arbtirarily return package name and version
 
 * Add native test runner
+
+* Sphinx docs
