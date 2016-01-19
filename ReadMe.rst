@@ -1,5 +1,5 @@
 ============
-Boiler Plate
+boiler_plate
 ============
 
 An empty skeleton to show the template of a Land Registry Flask application.
@@ -61,6 +61,17 @@ Build the html from the rst.
  
     $ python setup.py build_sphinx
 
+
+Installation
+============
+
+::
+
+    $ python setup.py install
+    $ boiler_plate
+    * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+
+
 Quickstart
 ==========
 
@@ -74,17 +85,21 @@ Quickstart
     $ find . -type f -print0 | xargs -0 sed -i 's/boiler_plate/my_project/g'
     $ mv boiler_plate my_project
 
-3. Run the unittests::
+3. Create new repo::
+   $  rm -rf .git
+   $  git init
+
+4. Run the unittests::
 
     $ python setup.py test
 
-4. Build the docs::
+5. Build the docs::
 
     $ sphinx-apidoc -F -o docs my_project
     $ python setup.py build_sphinx
     $ firefox build/sphinx/html/index.html 
 
-5. Start Developer Mode::
+6. Start Developer Mode::
 
     $ python setup.py develop --user
     $ cd ~
