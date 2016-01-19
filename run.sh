@@ -1,4 +1,4 @@
 export SETTINGS=config.DevelopmentConfig
 
 
-python run.py
+python boiler_plate/run.py
