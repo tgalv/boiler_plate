@@ -75,6 +75,10 @@ Installation
 Quickstart
 ==========
 
+An example of how to use boiler_plate as a cookie cutter for your 
+new Land Registry Flask application. 
+
+
 1. Clone::
 
     $ git clone git@git.lr.net:LRTM569/boilerplate.git
