@@ -5,6 +5,14 @@ boiler_plate
 An empty skeleton to show the template of a Land Registry Flask application.
 
 
+Pre-Reqs
+========
+
+* The setup.py takes the enhanced approach provided by `setuptools <https://pythonhosted.org/setuptools/setuptools.html>`_.
+
+* Documentation is via `sphinx <http://www.sphinx-doc.org/en/stable/>`_.
+
+
 Quickstart
 ==========
 
@@ -55,14 +63,6 @@ Credits
 2. `digital ocean <https://www.digitalocean.com/community/tutorials/how-to-package-and-distribute-python-applications>`_.
 
 3. `hitchhiker's guide <https://the-hitchhikers-guide-to-packaging.readthedocs.org/en/latest/>`_.
-
-
-Pre-Reqs
-========
-
-* The setup.py takes the enhanced approach provided by `setuptools <https://pythonhosted.org/setuptools/setuptools.html>`_.
-
-* Documentation is via `sphinx <http://www.sphinx-doc.org/en/stable/>`_.
 
 
 Blueprints
