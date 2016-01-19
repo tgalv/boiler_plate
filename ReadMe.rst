@@ -24,14 +24,6 @@ Windows 7
     $ export PATH=/c/Python34/Scripts/:$PATH
 
 
-Pre-Reqs
-========
-
-* The setup.py takes the enhanced approach provided by `setuptools <https://pythonhosted.org/setuptools/setuptools.html>`_.
-
-* Documentation is via `sphinx <http://www.sphinx-doc.org/en/stable/>`_.
-
-
 Quickstart
 ==========
 
@@ -54,17 +46,21 @@ new Land Registry Flask application.
    $  rm -rf .git
    $  git init
 
-4. Run the unittests::
+4. Install the prereqs::
+
+    $ pip install -r requirements.txt
+
+5. Run the unittests::
 
     $ python setup.py test
 
-5. Build the docs::
+6. Build the docs::
 
     $ sphinx-apidoc -F -o docs my_project
     $ python setup.py build_sphinx
     $ firefox build/sphinx/html/index.html 
 
-6. Start Developer Mode::
+7. Start Developer Mode::
 
     $ python setup.py develop --user
     $ cd ~
@@ -75,7 +71,7 @@ new Land Registry Flask application.
 
     $ cd -
 
-7. Check the application::
+8. Check the application::
 
     $ ./run.sh &
     $ curl http://127.0.0.1:5000/
@@ -91,6 +87,14 @@ Credits
 2. `digital ocean <https://www.digitalocean.com/community/tutorials/how-to-package-and-distribute-python-applications>`_.
 
 3. `hitchhiker's guide <https://the-hitchhikers-guide-to-packaging.readthedocs.org/en/latest/>`_.
+
+
+Pre-Reqs
+========
+
+* The setup.py takes the enhanced approach provided by `setuptools <https://pythonhosted.org/setuptools/setuptools.html>`_.
+
+* Documentation is via `sphinx <http://www.sphinx-doc.org/en/stable/>`_.
 
 
 Blueprints
