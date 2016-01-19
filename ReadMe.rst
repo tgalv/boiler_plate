@@ -5,6 +5,33 @@ boiler_plate
 An empty skeleton to show the template of a Land Registry Flask application.
 
 
+Platform
+========
+
+Ubuntu 14.04
+------------
+
+Configure for Python 3
+
+FIXME
+
+Windows 7
+---------
+
+1. Install Mingw (Git Bash)
+
+2. Install Python 3.4 `https://www.python.org/ftp/python/3.4.0/python-3.4.0.amd64.msi`::
+
+$ export PATH=/c/Python34/:$PATH
+
+3. Get Pip::
+
+$ curl -O https://bootstrap.pypa.io/get-pip.py
+
+$ export PATH=/c/Python34/Scripts/:$PATH
+
+.. FIXME ..
+
 Pre-Reqs
 ========
 
