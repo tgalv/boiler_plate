@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-export SETTINGS=config.DevelopmentConfig
+export SETTINGS=boiler_plate.config.DevelopmentConfig
 
-py.test --cov-report term-missing --cov application tests
+py.test boiler_plate boiler_plate/tests
