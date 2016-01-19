@@ -15,13 +15,13 @@ Windows 7
 
 2. Install `Python 3.4 <https://www.python.org/ftp/python/3.4.0/python-3.4.0.amd64.msi>`_::
 
-$ export PATH=/c/Python34/:$PATH
+    $ export PATH=/c/Python34/:$PATH
 
 3. Get Pip::
 
-$ curl -O https://bootstrap.pypa.io/get-pip.py
+    $ curl -O https://bootstrap.pypa.io/get-pip.py
 
-$ export PATH=/c/Python34/Scripts/:$PATH
+    $ export PATH=/c/Python34/Scripts/:$PATH
 
 
 Pre-Reqs
