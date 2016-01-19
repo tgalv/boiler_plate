@@ -123,3 +123,12 @@ Installation
     $ python setup.py install
     $ boiler_plate
     * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+
+
+Known Issues
+============
+
+* Test coverage in the pytest runner.
+* Sphinx docs are klunky
+* License 
+* File Headers
