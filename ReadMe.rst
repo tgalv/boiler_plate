@@ -20,8 +20,24 @@ Windows 7
 3. Get Pip::
 
     $ curl -O https://bootstrap.pypa.io/get-pip.py
-
     $ export PATH=/c/Python34/Scripts/:$PATH
+
+CentOS 7
+--------
+
+1. Install Python 3::
+
+   $ sudo yum install python34
+
+2. Install Pip::
+
+   $ wget https://bootstrap.pypa.io/get-pip.py
+   $ sudo python3.4 get-pip.py
+
+4. Use a Virtualenv::
+
+   $ pyvenv-3.4  venv
+   $ . venv/bin/activate
 
 
 Quickstart
@@ -48,7 +64,7 @@ new Land Registry Flask application.
 
 4. Install the prereqs::
 
-    $ pip install -r requirements.txt
+    $ pip3 install -r requirements.txt
 
 5. Run the unittests::
 
