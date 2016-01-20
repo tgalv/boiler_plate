@@ -1,15 +1,17 @@
 0.1
 
-* Created helloworld blueprint
+* Created helloworld blueprint.
 
-* Added setup.py
+* Added setup.py.
 
-* Added versioning capabilities
+* Added versioning capabilities.
 
-* Changed name application -> boiler_plate
+* Root API returns service name and version.
 
-* root URL arbtirarily return package name and version
+* Changed name application -> boiler_plate.
 
-* Add native test runner
+* root URL arbtirarily return package name and version.
 
-* Sphinx docs
+* Add native test runner.
+
+* Sphinx docs.
