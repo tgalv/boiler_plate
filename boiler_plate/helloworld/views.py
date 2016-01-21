@@ -2,8 +2,9 @@
 The endpoint of the Boiler Plate application.
 """
 
-from boiler_plate import app
 from flask import request, Blueprint, Response
+from boiler_plate import app
+
 
 helloworld = Blueprint('helloworld' , __name__)
 
