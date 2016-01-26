@@ -51,10 +51,9 @@ new Land Registry Flask application.
 
     $ git clone git@git.lr.net:LRTM569/boilerplate.git
 
-2. Create new repo::
+2. Remove old repo::
 
    $  rm -rf .git
-   $  git init
 
 3. Rename::
 
@@ -62,21 +61,25 @@ new Land Registry Flask application.
     $ find . -type f -print0 | xargs -0 sed -i 's/boiler_plate/my_project/g'
     $ mv boiler_plate my_project
 
-4. Install the prereqs::
+4. Create new repo::
+
+   $ git init
+
+5. Install the prereqs::
 
     $ pip3 install -r requirements.txt
 
-5. Run the unittests::
+6. Run the unittests::
 
     $ python setup.py test
 
-6. Build the docs::
+7. Build the docs::
 
     $ sphinx-apidoc -F -o docs my_project
     $ python setup.py build_sphinx
     $ firefox build/sphinx/html/index.html 
 
-7. Start Developer Mode::
+8. Start Developer Mode::
 
     $ python setup.py develop --user
     $ cd ~
@@ -87,7 +90,7 @@ new Land Registry Flask application.
 
     $ cd -
 
-8. Check the application::
+9. Check the application::
 
     $ ./run.sh &
     $ curl http://127.0.0.1:5000/
