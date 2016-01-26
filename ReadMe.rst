@@ -51,13 +51,17 @@ new Land Registry Flask application.
 
     $ git clone git@git.lr.net:LRTM569/boilerplate.git
 
+2. Rename the directory::
+  
+    $ boiler_plate my_project
+
 2. Remove old repo::
 
-   $  rm -rf .git
+    $ cd my_project
+    $ rm -rf .git
 
 3. Rename::
 
-    $ cd boiler_plate
     $ find . -type f -print0 | xargs -0 sed -i 's/boiler_plate/my_project/g'
     $ mv boiler_plate my_project
 
