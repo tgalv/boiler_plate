@@ -55,35 +55,35 @@ new Land Registry Flask application.
   
     $ mv boiler_plate my_project
 
-2. Remove old repo::
+3. Remove old repo::
 
     $ cd my_project
     $ rm -rf .git
 
-3. Rename::
+4. Rename::
 
     $ find . -type f -print0 | xargs -0 sed -i 's/boiler_plate/my_project/g'
     $ mv boiler_plate my_project
 
-4. Create new repo::
+5. Create new repo::
 
    $ git init
 
-5. Install the prereqs::
+6. Install the prereqs::
 
     $ pip3 install -r requirements.txt
 
-6. Run the unittests::
+7. Run the unittests::
 
     $ python setup.py test
 
-7. Build the docs::
+8. Build the docs::
 
     $ sphinx-apidoc -F -o docs my_project
     $ python setup.py build_sphinx
     $ firefox build/sphinx/html/index.html 
 
-8. Start Developer Mode::
+9. Start Developer Mode::
 
     $ python setup.py develop --user
     $ cd ~
