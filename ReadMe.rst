@@ -53,7 +53,7 @@ new Land Registry Flask application.
 
 2. Rename::
 
-    $ cd boilerplate
+    $ cd boiler_plate
     $ find . -type f -print0 | xargs -0 sed -i 's/boiler_plate/my_project/g'
     $ mv boiler_plate my_project
 
