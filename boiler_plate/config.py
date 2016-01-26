@@ -1,5 +1,5 @@
 """
-Flask config script for boilerplate.
+Flask config script for boiler_plate.
 """
 
 class Config(object):

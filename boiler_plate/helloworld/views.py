@@ -1,5 +1,5 @@
 """
-The endpoint of the Boiler Plate application.
+The endpoint of the boiler_plate application.
 """
 
 from flask import request, Blueprint, Response
