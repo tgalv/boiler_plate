@@ -53,7 +53,7 @@ new Land Registry Flask application.
 
 2. Rename the directory::
   
-    $ boiler_plate my_project
+    $ mv boiler_plate my_project
 
 2. Remove old repo::
 
