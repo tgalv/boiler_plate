@@ -1,5 +1,5 @@
 """
-Top level script for boilerplate.
+Top level script for boiler_plate.
 """
 
 
