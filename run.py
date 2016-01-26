@@ -3,11 +3,7 @@ Top level script for boiler_plate.
 """
 
 
-from boiler_plate import app
-
-
-def main():
-    app.run(debug=True, host="0.0.0.0")
+from boiler_plate.run import main
 
 
 if __name__ == "__main__":
