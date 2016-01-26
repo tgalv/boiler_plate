@@ -51,16 +51,16 @@ new Land Registry Flask application.
 
     $ git clone git@git.lr.net:LRTM569/boilerplate.git
 
-2. Rename::
+2. Create new repo::
+
+   $  rm -rf .git
+   $  git init
+
+3. Rename::
 
     $ cd boiler_plate
     $ find . -type f -print0 | xargs -0 sed -i 's/boiler_plate/my_project/g'
     $ mv boiler_plate my_project
-
-3. Create new repo::
-
-   $  rm -rf .git
-   $  git init
 
 4. Install the prereqs::
 
