@@ -49,7 +49,7 @@ new Land Registry Flask application.
 
 1. Clone::
 
-    $ git clone git@git.lr.net:LRTM569/boilerplate.git
+    $ git clone git@git.lr.net:casework/boiler_plate.git
 
 2. Rename the directory::
   
