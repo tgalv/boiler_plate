@@ -171,6 +171,39 @@ Installation
     * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 
 
+Gunicorn Integration
+====================
+
+Install as a package to the system::
+
+    $ python setup.py sdist
+    $ sudo pip3 install dist/boiler_plate-0.1.tar.gz
+    $ python -c "import boiler_plate; print(boiler_plate.__file__)"
+    /usr/local/lib/python3.4/dist-packages/boiler_plate/__init__.py
+    $ gunicorn --bind 0.0.0.0:8000 boiler_plate:app
+    [2016-01-21 12:02:48 +0000] [21948] [INFO] Starting gunicorn 19.4.5
+
+Uninstall the system package::
+
+    $ sudo pip3 uninstall boiler_plate
+    Uninstalling boiler-plate:
+    <snip>
+    Successfully uninstalled boiler-plate
+    $ python -c "import boiler_plate; print(boiler_plate.__file__)"
+    Traceback (most recent call last):
+    File "<string>", line 1, in <module>
+    ImportError: No module named 'boiler_plate'
+
+Install in Developer Mode::
+
+    $ cd /home/tom/projects/boiler_plate/
+    $ sudo pip3 install -e .
+    $ python -c "import boiler_plate; print(boiler_plate.__file__)"
+    /home/fred/projects/boiler_plate/boiler_plate/__init__.py
+    $ gunicorn --bind 0.0.0.0:8000 boiler_plate:app
+    [2016-01-21 12:05:02 +0000] [21997] [INFO] Starting gunicorn 19.4.5
+
+
 Known Issues
 ============
 
