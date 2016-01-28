@@ -12,5 +12,5 @@ setup(
     tests_require=["flask"],
     test_suite="boiler_plate.test_suite.suite",
     entry_points={'console_scripts':
-                  ['boiler_plate = boiler_plate.run:main']}
+                  ['boiler_plate = boiler_plate.main:main']}
 )

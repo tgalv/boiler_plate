@@ -3,7 +3,7 @@ Top level script for boiler_plate.
 """
 
 
-from boiler_plate.run import main
+from boiler_plate.main import main
 
 
 if __name__ == "__main__":
