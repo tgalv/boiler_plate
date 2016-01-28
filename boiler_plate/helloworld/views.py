@@ -17,4 +17,5 @@ def index():
     :return: The de-facto greeting.
     :rtype: str
     """
+    app.logger.debug("Saying hello...")
     return 'Hello World!'
