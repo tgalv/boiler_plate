@@ -2,7 +2,6 @@ import os
 import pkg_resources
 from flask import Flask
 
-__version__ = "0.1.1"
 
 app = Flask(__name__)
 
@@ -13,6 +12,4 @@ app.register_blueprint(views.helloworld, url_prefix='/helloworld')
 
 @app.route("/")
 def index():
-    dist = pkg_resources.get_distribution("boiler_plate")
-    app.logger.debug(dist)
-    return dist.egg_name()
+    return "boiler_plate"

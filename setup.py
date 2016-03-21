@@ -1,10 +1,8 @@
 from setuptools import setup, find_packages
 
-from boiler_plate import __version__
-
 setup(
     name="boiler_plate",
-    version = __version__,
+    version = "0.1",
     author="Fix Me",
     author_email="fix.me@landregistry.gsi.gov.uk",
     packages=find_packages(),

@@ -12,8 +12,7 @@ def main():
     """
     Run the boiler_plate server.
     """
-    parser = OptionParser(usage="usage: %prog [options]",
-                          version="%prog {0}".format(boiler_plate.__version__))
+    parser = OptionParser(usage="usage: %prog [options]")
     _port = os.environ.get('PORT')
     if _port is None:
         _port = 5000
