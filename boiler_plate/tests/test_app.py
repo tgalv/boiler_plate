@@ -10,3 +10,7 @@ class TestHelloWorld(unittest.TestCase):
     def test_service(self):
         response = self.app.get('/helloworld/')
         self.assertEquals(200, response.status_code)
+
+
+if __name__ == '__main__':
+    unittest.main()
