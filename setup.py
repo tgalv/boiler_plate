@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="boiler_plate",
-    version = "0.1",
+    version = "0.1.1",
     author="Fix Me",
     author_email="fix.me@landregistry.gsi.gov.uk",
     packages=find_packages(),
