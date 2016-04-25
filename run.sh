@@ -1,4 +1,4 @@
-export SETTINGS=config.DevelopmentConfig
+export SETTINGS=boiler_plate.config.DevelopmentConfig
 export PYTHONPATH="boiler_plate"
 
 python run.py

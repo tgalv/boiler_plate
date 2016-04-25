@@ -2,11 +2,15 @@
 Flask config script for boiler_plate.
 """
 
+import os
+
+
 class Config(object):
     """
     Production Configuration.
     """
     DEBUG = False
+    CLIENT_MODE = False
 
 
 class DevelopmentConfig(Config):
@@ -22,7 +26,8 @@ class DemoClientEndpoint5001(Config):
 
     Needs another boilerplate deployed.
     """
-    DEMO_URI = os.getenv('DEMO_URI', "0.0.0.0:5001")
+    DEMO_SERVER_URI = os.getenv('DEMO_URI', "http://0.0.0.0:5001")
+    CLIENT_MODE = True
 
 
 class DemoClientEndpoint5002(Config):
@@ -31,12 +36,5 @@ class DemoClientEndpoint5002(Config):
 
     Needs another boilerplate deployed.
     """
-    DEMO_URI = os.getenv('DEMO_URI', "0.0.0.0:5002")
-
-
-class DemoServerConfig(Config):
-    """
-    Server for Demo.
-    """
-    pass
-    
+    DEMO_SERVER_URI = os.getenv('DEMO_URI', "http://0.0.0.0:5002")
+    CLIENT_MODE = True

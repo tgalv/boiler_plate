@@ -2,9 +2,14 @@
 Requests made to other Microservices.
 """
 
+import json
+import os
 from urllib.parse import urljoin
 
-from process_digital_mortgage import app
+from flask import json
+import requests
+
+from boiler_plate import app
 
 
 app.config.from_object(os.environ.get('SETTINGS'))
@@ -30,7 +35,10 @@ class _APIBase:
         """
         url = urljoin(self.base, url)
         app.logger.debug("get: '%s' : '%s'...", url, params)
-        response = requests.get(url, params=params)
+        response = requests.get(url,
+                                params=params,
+                                headers = {'Content-Type': 'application/json',
+                                           'Accept': 'application/json'})
         response.raise_for_status()
         ret_val = json.loads(response.text)
         app.logger.debug(response.text)
@@ -67,14 +75,14 @@ class _DemoAPI(_APIBase):
     TODO: Replace this with calls to Microservices.
     """
 
-    base = app.config.get('DEMO_API')
+    base = app.config.get('DEMO_SERVER_URI')
 
     def greet_boiler_plate(self):
         """
         Hit the index of another boiler_plate.
         """
-        return self._get_json('/')
+        ret_val = self._get_json('/helloworld/')
+        return json.dumps(ret_val)
+
 
 DEMO_API = _DemoAPI()
-
-        
