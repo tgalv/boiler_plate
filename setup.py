@@ -6,7 +6,7 @@ setup(
     author="Fix Me",
     author_email="fix.me@landregistry.gsi.gov.uk",
     packages=find_packages(),
-    install_requires=["flask"],
+    install_requires=["flask", "requests"],
     tests_require=["flask"],
     test_suite="boiler_plate.test_suite.suite",
     entry_points={'console_scripts':
