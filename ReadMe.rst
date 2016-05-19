@@ -66,7 +66,7 @@ new Land Registry Flask application.
 
 6. Rename::
 
-    $ find . -type f -print0 | xargs -0 sed -i 's/boiler_plate/my_project/g'
+    $ find . -type f -print0 | xargs -0 sed -i '' -e 's/boiler_plate/my_project/g'
     $ mv boiler_plate my_project
 
 7. Create new repo::
